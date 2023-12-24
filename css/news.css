@@ -13,11 +13,12 @@ a {
 }
 
 #header-all {
+    border-radius: 5px;
     height: 18vh;
     flex-direction: column;
     display: flex;
     background-color: white;
-    margin-bottom: 13em;
+    margin-bottom: 1em;
 }
 
 .principal {
@@ -168,6 +169,41 @@ a {
     color: rgb(57, 107, 201);
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.after-header {
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    width: 90vw;
+    height: 50vh;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1em;
+}
+
+.first-image {
+    border-radius: 5px;
+    margin: 20px auto 0 auto;
+    width: 60vw;
+    height: 18vh;
+}
+
+.title {
+    margin: 0 auto;
+    margin-top: 1em;
+    font-size: 18px;
+    width: 80vw;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.resume {
+    margin: 0 auto;
+    margin-top: 4em;
+    font-size: 15px;
+    width: 80vw;
+    justify-content: center;
 }
 
 /* Extra small devices (phones, 600px and down) */
