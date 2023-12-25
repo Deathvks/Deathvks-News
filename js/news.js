@@ -4,9 +4,17 @@ function initialize() {
 
   const LIGHT_MODE = document.getElementById("light-mode");
   LIGHT_MODE.addEventListener("click", bodyLight);
+
+  const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        bodyDark();
+    } else if (savedTheme === 'light') {
+        bodyLight();
+    }
 }
 
 function bodyDark() {
+
   const DARK_MODE_BTN = document.getElementById("dark-mode");
   const LIGHT_MODE_BTN = document.getElementById("light-mode");
 
@@ -45,6 +53,9 @@ function bodyDark() {
   for (var j = 0; j < resumeElements.length; j++) {
     resumeElements[j].style.color = "grey";
   }
+
+  localStorage.setItem('theme', 'dark');
+
 }
 
 function bodyLight() {
@@ -86,6 +97,9 @@ function bodyLight() {
   for (var j = 0; j < resumeElements.length; j++) {
     resumeElements[j].style.color = "black";
   }
+
+  localStorage.setItem('theme', 'light');
+
 }
 
 initialize();

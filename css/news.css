@@ -8,8 +8,10 @@ body {
 }
 
 a {
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* El color del enlace será el mismo que el del texto circundante */
+    text-decoration: none;
+    /* Quita el subrayado */
+    color: inherit;
+    /* El color del enlace será el mismo que el del texto circundante */
 }
 
 #header-all {
@@ -60,57 +62,81 @@ a {
 }
 
 .transition {
-    transition: background-color 0.3s, color 0.3s; /* Ajusta la duración según prefieras */
+    transition: background-color 0.3s, color 0.3s;
+    /* Ajusta la duración según prefieras */
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 .fade-in {
-    animation: fadeIn 0.1s; /* Duración más corta */
+    animation: fadeIn 0.1s;
+    /* Duración más corta */
 }
 
 .fade-out {
-    animation: fadeOut 0.1s; /* Duración más corta */
+    animation: fadeOut 0.1s;
+    /* Duración más corta */
 }
 
 
 #header {
-    position: relative; /* El contenedor padre debe tener position: relative */
+    position: relative;
+    /* El contenedor padre debe tener position: relative */
 }
 
-#dark-mode, #light-mode, #len {
+#dark-mode,
+#light-mode,
+#len {
     margin-top: 0.3em;
-    position: absolute; /* Posición absoluta para todos los iconos */
-    top: 0; /* Ajusta según sea necesario */
+    position: absolute;
+    /* Posición absoluta para todos los iconos */
+    top: 0;
+    /* Ajusta según sea necesario */
     color: rgb(57, 107, 201);
 }
 
-#dark-mode, #light-mode {
-    right: 1em; /* Cambia este valor para mover los iconos más a la derecha o izquierda */
+#dark-mode,
+#light-mode {
+    right: 1em;
+    /* Cambia este valor para mover los iconos más a la derecha o izquierda */
 }
 
 #len {
-    right: 3em; /* Esto debería ser la suma del ancho de dark-mode y light-mode más un poco de espacio */
+    right: 3em;
+    /* Esto debería ser la suma del ancho de dark-mode y light-mode más un poco de espacio */
     color: grey;
 }
 
 #light-mode {
     color: rgb(57, 107, 201);
-    display: none; /* Inicia con light-mode oculto */
+    display: none;
+    /* Inicia con light-mode oculto */
 }
 
 #side-menu {
     border-radius: 5px;
-    border: 1px solid #ccc; /* Borde opcional para el menú */
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1); /* Sombra opcional */
+    border: 1px solid #ccc;
+    /* Borde opcional para el menú */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra opcional */
     padding: 20px;
     margin: 0 auto;
     width: 80vw;
@@ -210,13 +236,166 @@ a {
 @media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    #header-all {
+        margin-bottom: 2em;
+    }
+
+    .after-header {
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        justify-content: space-between;
+        height: 25vh;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 1em;
+        align-items: flex-start; /* Alinea los hijos a la izquierda */
+    }
+
+    .first-image {
+        border-radius: 8px;
+        margin: 0 auto;
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .title {
+        margin: 1em 1em;
+        font-size: 14px;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    .resume {
+        margin-top: 6em;
+        font-size: 13px;
+        width: 50vw;
+        justify-content: center;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .after-header {
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        justify-content: space-between;
+        height: 25vh;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 1em;
+        align-items: flex-start; /* Alinea los hijos a la izquierda */
+    }
+
+    .first-image {
+        border-radius: 8px;
+        margin: 0 auto;
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .title {
+        font-size: 14px;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    .resume {
+        margin-top: 7em;
+        font-size: 13px;
+        width: 50vw;
+        justify-content: center;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    #header-all {
+        margin-bottom: 2em;
+    }
+
+    .after-header {
+        flex-direction: row;
+        align-items: center;
+        width: 90vw;
+        justify-content: space-between;
+        height: 22vh;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 1em;
+        align-items: flex-start; /* Alinea los hijos a la izquierda */
+    }
+
+    .first-image {
+        border-radius: 8px;
+        margin: 0 auto;
+        width: 24vw;
+        height: 22vh;
+    }
+
+    .title {
+        margin: 1em 1em;
+        font-size: 15px;
+        font-weight: bold;
+        justify-content: center;
+        text-align: center;
+        align-self: flex-start;
+    }
+
+    .resume {
+        margin: 0 auto;
+        margin-top: 4em;
+        font-size: 15px;
+        width: 80vw;
+        justify-content: center;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    #header-all {
+        margin-bottom: 2em;
+    }
+
+    .after-header {
+        position: relative;
+        flex-direction: row;
+        align-items: center;
+        width: 55vw;
+        height: 24vh;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 1em;
+        align-items: flex-start; /* Alinea los hijos a la izquierda */
+    }
+
+    .first-image {
+        border-radius: 8px;
+        margin: 0 auto;
+        width: 22vw;
+        height: 24vh;
+    }
+
+    .title {
+        margin-left: 1em;
+        margin-top: 0.5em;
+        font-size: 18px;
+        width: 80vw;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .resume {
+        margin-top: 5em;
+        font-size: 13px;
+        width: 38vw;
+        justify-content: center;
+    }
+
+}
