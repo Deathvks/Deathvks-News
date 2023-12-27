@@ -32,6 +32,12 @@
         <i class="fa-solid fa-magnifying-glass" id="len"></i>
       </div>
 
+      <div id="len-menu">
+        <label>
+          <input type="search" id="search" name="search" placeholder="Buscar..."><br>
+        </label>
+      </div>
+
       <div id="side-menu">
         <h1 id="h1-menu"><a href="index.html">Inicio</a></h1>
         <hr id="one" />
@@ -46,15 +52,15 @@
     </header>
 
     <div class="after-header-form">
-        <form id="formularioContacto">
-            <label for="nombre" id="name-one">Nombre de usuario:</label><br>
-            <input type="text" id="name" name="nombre" placeholder="Tu nombre"><br>
-            <label for="correo" id="email-one">Correo Electrónico:</label><br>
-            <input type="text" id="email" name="correo" placeholder="tucorreo@example.com"><br>
-            <button type="submit" id="login">Registrarse</button>
-            <div id="error" style="color: red;"></div>
-        </form>
-    </div>
+      <form id="formularioContacto">
+          <label for="nombre" id="name-one">Nombre de usuario:</label><br>
+          <input type="text" id="name" name="nombre" placeholder="Tu nombre"><br>
+          <label for="correo" id="email-one">Correo Electrónico:</label><br>
+          <input type="text" id="email" name="correo" placeholder="tucorreo@example.com"><br>
+          <button type="submit" id="login">Registrarse</button>
+          <div id="error" style="color: red;"></div>
+      </form>
+  </div>
 
     <script
       src="https://kit.fontawesome.com/abeb2ec600.js"
@@ -62,6 +68,6 @@
     ></script>
     <script src="js/side-menu.js"></script>
     <script src="js/news.js"></script>
-    <script src="js/form.js"></script>
+    <script src="js/search-manager.js"></script>
   </body>
 </html>
