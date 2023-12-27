@@ -7,6 +7,12 @@ body {
     padding: 0;
 }
 
+.highlight {
+    background-color: yellow;
+    color: black;
+}
+
+
 a {
     text-decoration: none;
     /* Quita el subrayado */
@@ -108,7 +114,6 @@ a {
 
 #header {
     position: relative;
-    /* El contenedor padre debe tener position: relative */
 }
 
 #dark-mode,
@@ -245,6 +250,22 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#len-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1em;
+    visibility: hidden;
+}
+
+#search {
+    width: 50vw;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 .after-header-form {
     margin-top: 5em;
 }
@@ -269,7 +290,7 @@ input[type=text], input[type=email], textarea {
     box-sizing: border-box;
 }
 
-button {
+#login {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 80vw;
     background-color: rgb(57, 107, 201);
@@ -281,7 +302,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#login:hover {
     background-color: rgb(28, 73, 156);
 }
 
