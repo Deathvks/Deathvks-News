@@ -35,7 +35,7 @@ function bodyDark() {
   document.getElementById("len").style.color = "grey";
   document.getElementById("header-menu-icon").style.color = "grey";
   document.getElementById("h1-pr").style.color = "white";
-  document.getElementById("side-menu").style.backgroundColor = "black";
+  document.getElementById("side-menu").style.backgroundColor = "rgb(29, 29, 29)";
   document.getElementById("header-all").style.backgroundColor = "black";
   document.getElementById("one").style.color = "grey";
   document.body.style.backgroundColor = "rgb(23, 23, 24)";
