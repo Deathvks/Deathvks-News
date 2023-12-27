@@ -89,7 +89,7 @@ function bodyLight() {
   document.getElementById("header-menu-icon").style.color = "grey";
   document.getElementById("h1-pr").style.color = "rgb(57, 107, 201)";
   document.getElementById("side-menu").style.backgroundColor =
-    "rgb(230, 233, 235)";
+    "rgb(208, 209, 209)";
   document.getElementById("header-all").style.backgroundColor = "white";
   document.getElementById("one").style.color = "grey";
   document.body.style.backgroundColor = "rgb(230, 233, 235)";
