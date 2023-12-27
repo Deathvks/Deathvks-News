@@ -369,6 +369,10 @@ input[type=text], input[type=email], textarea {
         width: 45vw;
     }
 
+    #login {
+        width: 45vw;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -415,6 +419,10 @@ input[type=text], input[type=email], textarea {
     }
     
     button {
+        width: 35vw;
+    }
+
+    #login {
         width: 35vw;
     }
 
@@ -472,6 +480,10 @@ input[type=text], input[type=email], textarea {
     button {
         width: 25vw;
     }
+
+    #login {
+        width: 25vw;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -523,6 +535,10 @@ input[type=text], input[type=email], textarea {
     }
     
     button {
+        width: 15vw;
+    }
+
+    #login {
         width: 15vw;
     }
 
