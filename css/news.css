@@ -146,17 +146,39 @@ a {
 }
 
 #side-menu {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    /* Borde opcional para el menú */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra opcional */
-    padding: 20px;
-    margin: 0 auto;
-    width: 80vw;
+    border-radius: 13px;
+    transition: left 0.2s ease;
+    top: 0;
+    position: fixed;
     z-index: 10000;
-    background-color: white;
+    width: 42%;
+    height: 100%;
     visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+}
+
+#side-menu.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent dark background */
+    display: none;
+    /* By default hidden */
+}
+
+#one {
+    margin: 10px;
+    max-height: 1px;
+
 }
 
 #side-menu-icon {
@@ -177,6 +199,7 @@ a {
 }
 
 #h1-menu {
+    margin-top: 2em;
     margin-left: 0.5em;
     color: rgb(57, 107, 201);
     font-size: 16px;
@@ -191,13 +214,6 @@ a {
 }
 
 #h1-menu2 {
-    margin-left: 0.5em;
-    color: rgb(57, 107, 201);
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#h1-menu3 {
     margin-left: 0.5em;
     color: rgb(57, 107, 201);
     font-size: 16px;
@@ -280,7 +296,9 @@ body {
     border-radius: 5px;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text],
+input[type=email],
+textarea {
     width: 80vw;
     padding: 8px;
     margin: 5px 0 15px;
@@ -316,12 +334,55 @@ input[type=text], input[type=email], textarea {
         height: 24vh;
         margin-bottom: 2em;
     }
-    
+
     .principal {
         display: flex;
         flex-direction: column;
         width: 100vw;
         height: 24vh;
+    }
+
+    #side-menu {
+        border-radius: 8px;
+        transition: left 0.5s ease;
+        top: 0;
+        position: fixed;
+        z-index: 10000;
+        width: 36%;
+        height: 100vh;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s ease;
+    }
+
+    #side-menu.visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    side-menu-icon {
+        z-index: 10001;
+    }
+
+    #h1-menu {
+        margin-left: 0.9em;
+        margin-top: 2em;
+    }
+
+    #h1-menu1 {
+        margin-left: 0.9em;
+    }
+
+    #h1-menu2 {
+        margin-left: 0.9em;
+    }
+
+    #h1-menu4 {
+        margin-left: 0.9em;
+    }
+
+    #one {
+        margin: 15px;
     }
 
     .after-header {
@@ -331,7 +392,8 @@ input[type=text], input[type=email], textarea {
         border-radius: 8px;
         background-color: rgb(255, 255, 255);
         margin-bottom: 1em;
-        align-items: flex-start; /* Alinea los hijos a la izquierda */
+        align-items: flex-start;
+        /* Alinea los hijos a la izquierda */
     }
 
     .first-image {
@@ -360,11 +422,13 @@ input[type=text], input[type=email], textarea {
     #formularioContacto {
         width: 45vw;
     }
-    
-    input[type=text], input[type=email], textarea {
+
+    input[type=text],
+    input[type=email],
+    textarea {
         width: 45vw;
     }
-    
+
     button {
         width: 45vw;
     }
@@ -386,7 +450,8 @@ input[type=text], input[type=email], textarea {
         border-radius: 8px;
         background-color: rgb(255, 255, 255);
         margin-bottom: 1em;
-        align-items: flex-start; /* Alinea los hijos a la izquierda */
+        align-items: flex-start;
+        /* Alinea los hijos a la izquierda */
     }
 
     .first-image {
@@ -413,17 +478,24 @@ input[type=text], input[type=email], textarea {
     #formularioContacto {
         width: 35vw;
     }
-    
-    input[type=text], input[type=email], textarea {
+
+    input[type=text],
+    input[type=email],
+    textarea {
         width: 35vw;
     }
-    
+
     button {
         width: 35vw;
     }
 
     #login {
         width: 35vw;
+    }
+
+    #side-menu {
+        width: 28%;
+        border-radius: 8px;
     }
 
 }
@@ -443,7 +515,8 @@ input[type=text], input[type=email], textarea {
         border-radius: 8px;
         background-color: rgb(255, 255, 255);
         margin-bottom: 1em;
-        align-items: flex-start; /* Alinea los hijos a la izquierda */
+        align-items: flex-start;
+        /* Alinea los hijos a la izquierda */
     }
 
     .first-image {
@@ -472,17 +545,24 @@ input[type=text], input[type=email], textarea {
     #formularioContacto {
         width: 25vw;
     }
-    
-    input[type=text], input[type=email], textarea {
+
+    input[type=text],
+    input[type=email],
+    textarea {
         width: 25vw;
     }
-    
+
     button {
         width: 25vw;
     }
 
     #login {
         width: 25vw;
+    }
+
+    #side-menu {
+        width: 25%;
+        border-radius: 8px;
     }
 }
 
@@ -501,7 +581,8 @@ input[type=text], input[type=email], textarea {
         border-radius: 8px;
         background-color: rgb(255, 255, 255);
         margin-bottom: 1em;
-        align-items: flex-start; /* Alinea los hijos a la izquierda */
+        align-items: flex-start;
+        /* Alinea los hijos a la izquierda */
     }
 
     .first-image {
@@ -529,17 +610,24 @@ input[type=text], input[type=email], textarea {
     #formularioContacto {
         width: 15vw;
     }
-    
-    input[type=text], input[type=email], textarea {
+
+    input[type=text],
+    input[type=email],
+    textarea {
         width: 15vw;
     }
-    
+
     button {
         width: 15vw;
     }
 
     #login {
         width: 15vw;
+    }
+
+    #side-menu {
+        width: 18%;
+        border-radius: 8px;
     }
 
 }

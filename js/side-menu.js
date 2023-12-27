@@ -1,37 +1,30 @@
-function initialize() {
-    const headerMenuIcon = document.getElementById("header-menu-icon");
-    headerMenuIcon.addEventListener("click", function(event) {
-        showSideMenu();
-        event.stopPropagation(); // Previene que el evento se propague al documento
-    });
+function initializeMenu() {
+  const HEADER_MENU_ICON = document.getElementById("header-menu-icon");
+  HEADER_MENU_ICON.addEventListener("click", showHideMenu);
 
-    const sideMenuIcon = document.getElementById("side-menu-icon");
-    sideMenuIcon.addEventListener("click", function(event) {
-        hideSideMenu();
-        event.stopPropagation(); // Previene que el evento se propague al documento
-    });
+  const SIDE_MENU_ICON = document.getElementById("side-menu-icon");
+  SIDE_MENU_ICON.addEventListener("click", hideSideMenu);
 
-    // Escucha los clics en el documento
-    document.addEventListener("click", function(event) {
-        const sideMenu = document.getElementById("side-menu");
-        if (sideMenu.style.visibility === "visible") {
-            hideSideMenu();
-        }
-    });
+  const SIDE_MENU = document.getElementById("side-menu");
+  const OVERLAY = document.getElementById("overlay");
+
+  document.addEventListener("click", function (event) {
+    const isClickInsideMenu = SIDE_MENU.contains(event.target);
+    const isHeaderMenuIcon = event.target === HEADER_MENU_ICON;
+    if (!isClickInsideMenu && !isHeaderMenuIcon) {
+      hideSideMenu();
+    }
+  });
+
+  function showHideMenu() {
+    SIDE_MENU.classList.add("visible"); // Add the class to show the side-menu
+    OVERLAY.style.display = "block"; // Show background layer
+  }
+
+  function hideSideMenu() {
+    SIDE_MENU.classList.remove("visible"); // Remove the class to hide the side-menu
+    OVERLAY.style.display = "none"; // Hide background layer
+  }
 }
 
-function showSideMenu() {
-    const sideMenu = document.getElementById("side-menu");
-    sideMenu.style.visibility = "visible";
-    document.getElementById("header-menu-icon").style.visibility = "hidden";
-    document.getElementById("side-menu-icon").style.visibility = "visible";
-}
-
-function hideSideMenu() {
-    const sideMenu = document.getElementById("side-menu");
-    sideMenu.style.visibility = "hidden";
-    document.getElementById("header-menu-icon").style.visibility = "visible";
-    document.getElementById("side-menu-icon").style.visibility = "hidden";
-}
-
-initialize();
+initializeMenu();
