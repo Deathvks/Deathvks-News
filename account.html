@@ -45,22 +45,15 @@
       </div>
     </header>
 
-    <div class="after-header">
-      <img src="img/google.png" alt="google" class="first-image" />
-      <p class="title">Aprende cómo activar la IA de Google antes que nadie</p>
-      <p class="resume">
-        Google ha ido poco a poco arrancando con el terreno de las IA para hacer
-        frente en este sector del mercado que cada vez esta más en auge y…
-      </p>
-    </div>
-
-    <div class="after-header">
-      <img src="img/xiaomi.png" alt="google" class="first-image" />
-      <p class="title">HyperOS ya está disponible para estos cinco teléfonos Xiaomi</p>
-      <p class="resume">
-        Google ha ido poco a poco arrancando con el terreno de las IA para hacer
-        frente en este sector del mercado que cada vez esta más en auge y…
-      </p>
+    <div class="after-header-form">
+        <form id="formularioContacto">
+            <label for="nombre" id="name-one">Nombre de usuario:</label><br>
+            <input type="text" id="name" name="nombre" placeholder="Tu nombre"><br>
+            <label for="correo" id="email-one">Correo Electrónico:</label><br>
+            <input type="text" id="email" name="correo" placeholder="tucorreo@example.com"><br>
+            <button type="submit">Enviar</button>
+            <div id="error" style="color: red;"></div>
+        </form>
     </div>
 
     <script
@@ -69,5 +62,6 @@
     ></script>
     <script src="js/side-menu.js"></script>
     <script src="js/news.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

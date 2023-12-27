@@ -54,6 +54,15 @@ function bodyDark() {
     resumeElements[j].style.color = "grey";
   }
 
+  var resumeElements = document.getElementsByClassName("p-pr-account");
+  for (var j = 0; j < resumeElements.length; j++) {
+    resumeElements[j].style.color = "white";
+  }
+
+  document.getElementById("formularioContacto").style.backgroundColor = "black";
+  document.getElementById("name-one").style.color = "white";
+  document.getElementById("email-one").style.color = "white";
+
   localStorage.setItem('theme', 'dark');
 
 }
@@ -97,6 +106,15 @@ function bodyLight() {
   for (var j = 0; j < resumeElements.length; j++) {
     resumeElements[j].style.color = "black";
   }
+
+  var resumeElements = document.getElementsByClassName("p-pr-account");
+  for (var j = 0; j < resumeElements.length; j++) {
+    resumeElements[j].style.color = "grey";
+  }
+
+  document.getElementById("formularioContacto").style.backgroundColor = "white";
+  document.getElementById("name-one").style.color = "black";
+  document.getElementById("email-one").style.color = "black";
 
   localStorage.setItem('theme', 'light');
 
