@@ -146,6 +146,7 @@ a {
 }
 
 #side-menu {
+    background-color: rgb(230, 233, 235);
     border-radius: 13px;
     transition: left 0.2s ease;
     top: 0;
