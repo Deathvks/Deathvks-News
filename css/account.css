@@ -1,0 +1,165 @@
+body {
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit; /* Elimina el color predeterminado y hace que el enlace use el color del texto circundante */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+}
+
+#channel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 45px;
+    margin: 0 auto;
+    color: rgb(45, 120, 190);
+}
+
+.topic {
+    margin: 0 auto;
+    font-size: 22px;
+}
+
+#header {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-radius: 10px;
+    width: 90vw;
+    height: 6vh;
+    background-color: rgb(45, 120, 190);
+}
+
+.seccion {
+    margin: 0 auto;
+    margin-top: 0.5em;
+    font-size: 25px;
+    color: white;
+}
+
+#dark-mode {
+    display: flex;
+    margin-top: 1em;
+    float: right;
+    padding: 10px 20px;
+    margin-right: 5.5em;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#dark-mode:hover {
+    background-color: #555;
+    color: #EEE;
+    transform: scale(1.05);
+}
+
+#dark-mode:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
+}
+
+#account {
+    display: flex;
+    margin-top: 1em;
+    float: left;
+    padding: 10px 20px;
+    margin-left: 5.5em;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#account:hover {
+    background-color: #555;
+    color: #EEE;
+    transform: scale(1.05);
+}
+
+#account:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
+}
+
+#identify {
+    margin: 2em auto 0 2.7em;
+    text-decoration: underline;
+}
+
+.separate {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(49, 103, 184, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 1em; /* Ajustado según el requisito */
+    margin-bottom: 20px;
+}
+
+#after-header {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 0em auto;
+    width: 90vw;
+    height: 60vh;
+    background-color: rgb(230, 233, 235);
+}
+
+#formularioContacto {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    width: 15vw;
+    margin: 3em auto;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    width: 15vw;
+    padding: 8px;
+    margin: 5px 0 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#login {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 15vw;
+    background-color: rgb(45, 120, 190);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: rgb(46, 77, 138);
+}
+
+
+
