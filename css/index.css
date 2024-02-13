@@ -212,9 +212,21 @@ a {
 
 #google-notice1{
     border-radius: 8px;
-    margin: 3em auto;
+    margin: 1em auto;
     width: 60%;
     height: 50%;
+}
+
+.title1{
+    width: 60%;
+    margin: 1em auto;
+    font-size: 40px;
+}
+
+#notice1{
+    margin: 1em auto;
+    width: 45%;
+    font-size: 20px;
 }
 
 /* Extra small devices (phones, 600px and down) */
