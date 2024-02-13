@@ -206,8 +206,71 @@ a {
 }
 
 .seccion-footer{
-    flex-direction: row;
     font-size: 20px;
     margin: 0 auto;
 }
 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .seccion {
+        margin-top: 1em;
+        font-size: 16px;
+    }
+
+    #dark-mode {
+        margin-right: 1.5em;
+    }
+
+    #account {
+        margin-left: 1.5em;
+    }
+
+    #notice {
+        flex-direction: column;
+    }
+
+    .google {
+        width: 50vw;
+        height: 15vh;
+    }
+
+    #title {
+        font-size: 14px;
+        margin: 0.5em auto auto 1em;
+    }
+    
+    .Xiaomi {
+        border-radius: 8px;
+        width: 50vw;
+        height: 15vh;
+    }
+
+    #title-two {
+        font-size: 14px;
+        margin: 0.5em auto auto 1em;
+    }
+    
+    #section{
+        display: flex;
+        width: 30vw;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    
+    .seccion-footer{
+        font-size: 20px;
+        margin: 0 6em auto -5em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
