@@ -258,6 +258,12 @@ li {
     color: rgb(45, 120, 190);
 }
 
+#anoticess{
+    font-size: 20                                                                                                                       px;
+    font-weight: bold;
+    color: rgb(45, 120, 190);
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
