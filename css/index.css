@@ -13,6 +13,10 @@ a {
     text-decoration: none; /* Elimina el subrayado predeterminado */
 }
 
+li {
+    margin-left: 3em;
+}
+
 #channel {
     display: flex;
     flex-direction: column;
@@ -114,7 +118,7 @@ a {
     flex-direction: column;
     margin: 0 auto;
     width: 80vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(230, 233, 235);
 }
 
@@ -162,6 +166,7 @@ a {
 
 #two {
     margin: 0.1em auto;
+    margin-bottom: 2em;
     width: 50vw;
     height: 28vh;
     background-color: white;
@@ -217,6 +222,13 @@ a {
     height: 50%;
 }
 
+#google-notice2{
+    border-radius: 8px;
+    margin: 0 3.5em;
+    width: 70%;
+    height: 60%;
+}
+
 .title1{
     width: 60%;
     margin: 1em auto;
@@ -227,6 +239,14 @@ a {
     margin: 1em auto;
     width: 45%;
     font-size: 20px;
+}
+
+#headers{
+    font-size: 30px;
+}
+
+#anotices{
+    color: blue;
 }
 
 /* Extra small devices (phones, 600px and down) */
