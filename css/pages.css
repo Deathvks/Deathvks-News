@@ -115,22 +115,23 @@ a {
     flex-direction: column;
     margin: 0 auto;
     width: 80vw;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(230, 233, 235);
-}
-
-#notice {
-    display: flex;
-    flex-direction: row;
 }
 
 #one {
     transition: transform 0.2s ease-in-out;
-    margin: 2em auto;
-    width: 50vw;
-    height: 28vh;
+    margin: 3em;
+    width: 19vw;
+    height: 50vh;
     background-color: white;
     border-radius: 8px;
+}
+
+#resume{
+    width: 15vw;
+    margin: 2em auto;
+    font-size: 15px;
 }
 
 .google {
@@ -140,41 +141,33 @@ a {
 }
 
 #title {
-    font-size: 18px;
+    width: 15vw;
+    font-size: 20px;
     margin: 0.5em auto;
     height: 4vh;
 }
 
-#title-two {
-    font-size: 18px;
-    margin: 0.5em auto;
+#two {
+    transition: transform 0.2s ease-in-out;
+    margin: 3em;
+    margin-bottom: 3em;
+    width: 19vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 8px;
 }
 
-.resume {
-    margin: 0 auto;
-    margin-top: 10em;
-    font-size: 15px;
+#title-two {
+    width: 13vw;
+    font-size: 20px;
+    margin: 0.5em auto;
+    height: 4vh;
 }
 
 .Xiaomi {
     border-radius: 8px;
     width: 19vw;
     height: 28vh;
-}
-
-#two {
-    transition: transform 0.2s ease-in-out;
-    margin: 0.1em auto;
-    width: 50vw;
-    height: 28vh;
-    background-color: white;
-    border-radius: 8px;
-}
-
-#description {
-    float: left;
-    margin-top: 8em;
-    height: 3vh;
 }
 
 #identify {
