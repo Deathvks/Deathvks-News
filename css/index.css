@@ -128,6 +128,7 @@ li {
 }
 
 #one {
+    transition: transform 0.2s ease-in-out;
     margin: 2em auto;
     width: 50vw;
     height: 28vh;
@@ -165,6 +166,7 @@ li {
 }
 
 #two {
+    transition: transform 0.2s ease-in-out;
     margin: 0.1em auto;
     margin-bottom: 2em;
     width: 50vw;
