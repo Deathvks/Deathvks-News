@@ -1,6 +1,6 @@
 // Seleccionamos el elemento div con id 'one'
-var div = document.getElementById("one");
-var div2 = document.getElementById("two");
+let div = document.getElementById("one");
+let div2 = document.getElementById("two");
 
 // Asignamos una función al evento mouseover
 div.onmouseover = function () {

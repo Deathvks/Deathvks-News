@@ -276,7 +276,7 @@ li {
 @media only screen and (max-width: 600px) {
 
     .seccion {
-        margin-top: 1em;
+        margin-top: 1.1em;
         font-size: 16px;
     }
 
@@ -287,7 +287,7 @@ li {
     #one {
         margin: 3em;
         width: 80%;
-        height: 35vh;
+        height: 36  vh;
     }
 
     #resume{
@@ -310,7 +310,7 @@ li {
     #two {
         margin: 3em;
         width: 80%;
-        height: 35vh;
+        height: 36vh;
     }
 
     .Xiaomi {
