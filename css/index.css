@@ -152,6 +152,12 @@ li {
     font-size: 15px;
 }
 
+#resume1{
+    width: 13vw;
+    margin: 3em auto;
+    font-size: 15px;
+}
+
 .google {
     border-radius: 8px;
     width: 19vw;

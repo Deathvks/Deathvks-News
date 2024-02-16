@@ -157,6 +157,12 @@ a {
     border-radius: 8px;
 }
 
+#resume1{
+    width: 13vw;
+    margin: 3em auto;
+    font-size: 15px;
+}
+
 #title-two {
     width: 13vw;
     font-size: 20px;
