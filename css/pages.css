@@ -14,233 +14,6 @@ a {
     text-decoration: none; /* Elimina el subrayado predeterminado */
 }
 
-#channel {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.5em;
-}
-
-.name {
-    font-weight: bold;
-    font-size: 45px;
-    margin: 0 auto;
-    color: rgb(45, 120, 190);
-}
-
-.topic {
-    margin: 0 auto;
-    font-size: 22px;
-}
-
-#header {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 1em;
-    border-radius: 10px;
-    width: 90vw;
-    height: 6vh;
-    background-color: rgb(45, 120, 190);
-}
-
-.seccion {
-    margin: 0 auto;
-    margin-top: 0.5em;
-    font-size: 25px;
-    color: white;
-}
-
-#dark-mode {
-    display: flex;
-    margin-top: 1em;
-    float: right;
-    padding: 10px 20px;
-    margin-right: 5.5em;
-    font-size: 16px;
-    color: #FFF;
-    background-color: #333;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-#dark-mode:hover {
-    background-color: #555;
-    color: #EEE;
-    transform: scale(1.05);
-}
-
-#dark-mode:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
-}
-
-#account {
-    display: flex;
-    margin-top: 1em;
-    float: left;
-    padding: 10px 20px;
-    margin-left: 5.5em;
-    font-size: 16px;
-    color: #FFF;
-    background-color: #333;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-#account:hover {
-    background-color: #555;
-    color: #EEE;
-    transform: scale(1.05);
-}
-
-#account:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
-}
-
-.separate {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(49, 103, 184, 0.75), rgba(0, 0, 0, 0));
-    margin-top: 1em; /* Ajustado según el requisito */
-    margin-bottom: 20px;
-}
-
-#after-header {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    width: 80vw;
-    height: 100%;
-    background-color: rgb(230, 233, 235);
-}
-
-#example{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-}
-
-#one {
-    transition: transform 0.2s ease-in-out;
-    margin: 3em;
-    width: 19vw;
-    height: 50vh;
-    background-color: white;
-    border-radius: 8px;
-}
-
-#resume{
-    width: 15vw;
-    margin: 2em auto;
-    font-size: 15px;
-}
-
-.google {
-    border-radius: 8px;
-    width: 19vw;
-    height: 28vh;
-}
-
-#title {
-    width: 15vw;
-    font-size: 20px;
-    margin: 0.5em auto;
-    height: 4vh;
-}
-
-#two {
-    transition: transform 0.2s ease-in-out;
-    margin: 3em;
-    margin-bottom: 3em;
-    width: 19vw;
-    height: 50vh;
-    background-color: white;
-    border-radius: 8px;
-}
-
-#three {
-    transition: transform 0.2s ease-in-out;
-    margin: 3em;
-    margin-bottom: 3em;
-    width: 19vw;
-    height: 50vh;
-    background-color: white;
-    border-radius: 8px;
-}
-
-#title-three {
-    width: 15vw;
-    font-size: 20px;
-    margin: 0.5em 0 0 3.5em;
-    height: 4vh;
-}
-
-#resume1{
-    width: 13vw;
-    margin: 3em auto;
-    font-size: 15px;
-}
-
-#title-two {
-    width: 13vw;
-    font-size: 20px;
-    margin: 0.5em auto;
-    height: 4vh;
-}
-
-.Xiaomi {
-    border-radius: 8px;
-    width: 19vw;
-    height: 28vh;
-}
-
-#identify {
-    margin: 2em auto 0 2.7em;
-    text-decoration: underline;
-}
-
-#footer{
-    width: 100%;
-    height: 20vh;
-    margin: 0 auto;
-    margin-top: 5em;
-    flex-direction: column;
-    display: flex;
-    border-radius: 5px;
-    background-color: rgb(230, 233, 235);
-}
-
-.name-footer{
-    font-weight: bold;
-    font-size: 45px;
-    margin: 0 auto;
-    color: rgb(45, 120, 190);
-}
-
-.topic-footer{
-    margin: 0 auto;
-    font-size: 22px;
-    margin-bottom: 3em;
-}
-
-#section{
-    width: 30vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-}
-
-.seccion-footer{
-    flex-direction: row;
-    font-size: 20px;
-    margin: 0 auto;
-}
-
 @media only screen and (max-width: 600px) {
 
     #identify {
@@ -260,11 +33,17 @@ a {
     #one {
         margin: 3em;
         width: 80%;
-        height: 35vh;
+        height: 37vh;
+    }
+
+    #resume1{
+        width: 50vw;
+        margin: 1em auto;
+        font-size: 13px;
     }
 
     #resume{
-        width: 50vw;
+        width: 40vw;
         margin: 1em auto;
         font-size: 13px;
     }
@@ -275,15 +54,21 @@ a {
     }
 
     #title {
-        width: 50vw;
+        width: 40vw;
         font-size: 16px;
         margin: 0.5em auto;
+    }
+
+    #title-three {
+        width: 40vw;
+        font-size: 16px;
+        margin: 0.5em 0 0 5em;
     }
 
     #two {
         margin: 3em;
         width: 80%;
-        height: 35vh;
+        height: 40vh;
     }
 
     .Xiaomi {
@@ -319,7 +104,93 @@ a {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    #identify {
+        margin: 2em auto 0 0.9em;
+        text-decoration: underline;
+    }
+
+    .seccion {
+        margin-top: 1em;
+        font-size: 16px;
+    }
+
+    #after-header {
+        flex-direction: column;
+    }
+
+    #one {
+        margin: 3em;
+        width: 80%;
+        height: 37vh;
+    }
+
+    #resume1{
+        width: 50vw;
+        margin: 1em auto;
+        font-size: 13px;
+    }
+
+    #resume{
+        width: 40vw;
+        margin: 1em auto;
+        font-size: 13px;
+    }
+
+    .google {
+        width: 100%;
+        height: 20vh;
+    }
+
+    #title {
+        width: 40vw;
+        font-size: 16px;
+        margin: 0.5em auto;
+    }
+
+    #title-three {
+        width: 32vw;
+        font-size: 16px;
+        margin: 0.5em 0 0 5em;
+    }
+
+    #two {
+        margin: 3em;
+        width: 80%;
+        height: 40vh;
+    }
+
+    .Xiaomi {
+        width: 100%;
+        height: 20vh;
+    }
+
+    #title-two {
+        width: 43vw;
+        font-size: 16px;
+        margin: 0.5em auto;
+    }
+
+    #dark-mode {
+        margin-right: 1.5em;
+    }
+
+    #account {
+        margin-left: 1.5em;
+    }
+    
+    #section{
+        display: flex;
+        width: 30vw;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+    
+    .seccion-footer{
+        font-size: 20px;
+        margin: 0 6em auto -5em;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
@@ -328,4 +199,221 @@ a {
 @media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    #channel {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5em;
+    }
+    
+    .name {
+        font-weight: bold;
+        font-size: 45px;
+        margin: 0 auto;
+        color: rgb(45, 120, 190);
+    }
+    
+    .topic {
+        margin: 0 auto;
+        font-size: 22px;
+    }
+    
+    #header {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 1em;
+        border-radius: 10px;
+        width: 90vw;
+        height: 6vh;
+        background-color: rgb(45, 120, 190);
+    }
+    
+    .seccion {
+        margin: 0 auto;
+        margin-top: 0.5em;
+        font-size: 25px;
+        color: white;
+    }
+    
+    #dark-mode {
+        display: flex;
+        margin-top: 1em;
+        float: right;
+        padding: 10px 20px;
+        margin-right: 5.5em;
+        font-size: 16px;
+        color: #FFF;
+        background-color: #333;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+    
+    #dark-mode:hover {
+        background-color: #555;
+        color: #EEE;
+        transform: scale(1.05);
+    }
+    
+    #dark-mode:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
+    }
+    
+    #account {
+        display: flex;
+        margin-top: 1em;
+        float: left;
+        padding: 10px 20px;
+        margin-left: 5.5em;
+        font-size: 16px;
+        color: #FFF;
+        background-color: #333;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+    
+    #account:hover {
+        background-color: #555;
+        color: #EEE;
+        transform: scale(1.05);
+    }
+    
+    #account:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(255,255,255,0.5);
+    }
+    
+    .separate {
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(49, 103, 184, 0.75), rgba(0, 0, 0, 0));
+        margin-top: 1em; /* Ajustado según el requisito */
+        margin-bottom: 20px;
+    }
+    
+    #after-header {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 80vw;
+        height: 100%;
+        background-color: rgb(230, 233, 235);
+    }
+    
+    #example{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    
+    #one {
+        transition: transform 0.2s ease-in-out;
+        margin: 3em;
+        width: 19vw;
+        height: 50vh;
+        background-color: white;
+        border-radius: 8px;
+    }
+    
+    #resume{
+        width: 15vw;
+        margin: 2em auto;
+        font-size: 15px;
+    }
+    
+    .google {
+        border-radius: 8px;
+        width: 19vw;
+        height: 28vh;
+    }
+    
+    #title {
+        width: 15vw;
+        font-size: 20px;
+        margin: 0.5em auto;
+        height: 4vh;
+    }
+    
+    #two {
+        transition: transform 0.2s ease-in-out;
+        margin: 3em;
+        margin-bottom: 3em;
+        width: 19vw;
+        height: 50vh;
+        background-color: white;
+        border-radius: 8px;
+    }
+    
+    #title-three {
+        width: 15vw;
+        font-size: 20px;
+        margin: 0.5em 0 0 3.5em;
+        height: 4vh;
+    }
+    
+    #resume1{
+        width: 13vw;
+        margin: 3em auto;
+        font-size: 15px;
+    }
+    
+    #title-two {
+        width: 13vw;
+        font-size: 20px;
+        margin: 0.5em auto;
+        height: 4vh;
+    }
+    
+    .Xiaomi {
+        border-radius: 8px;
+        width: 19vw;
+        height: 28vh;
+    }
+    
+    #identify {
+        margin: 2em auto 0 2.7em;
+        text-decoration: underline;
+    }
+    
+    #footer{
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+        margin-top: 5em;
+        flex-direction: column;
+        display: flex;
+        border-radius: 5px;
+        background-color: rgb(230, 233, 235);
+    }
+    
+    .name-footer{
+        font-weight: bold;
+        font-size: 45px;
+        margin: 0 auto;
+        color: rgb(45, 120, 190);
+    }
+    
+    .topic-footer{
+        margin: 0 auto;
+        font-size: 22px;
+        margin-bottom: 3em;
+    }
+    
+    #section{
+        width: 30vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .seccion-footer{
+        flex-direction: row;
+        font-size: 20px;
+        margin: 0 auto;
+    }
+}
