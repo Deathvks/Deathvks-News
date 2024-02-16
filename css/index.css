@@ -137,9 +137,35 @@ li {
     background-color: rgb(230, 233, 235);
 }
 
+#example{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
 #one {
     transition: transform 0.2s ease-in-out;
     margin: 3em;
+    width: 19vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#two {
+    transition: transform 0.2s ease-in-out;
+    margin: 3em;
+    margin-bottom: 3em;
+    width: 19vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#three {
+    transition: transform 0.2s ease-in-out;
+    margin: 3em;
+    margin-bottom: 3em;
     width: 19vw;
     height: 50vh;
     background-color: white;
@@ -178,20 +204,17 @@ li {
     height: 4vh;
 }
 
+#title-three {
+    width: 15vw;
+    font-size: 20px;
+    margin: 0.5em 0 0 3.5em;
+    height: 4vh;
+}
+
 .Xiaomi {
     border-radius: 8px;
     width: 19vw;
     height: 28vh;
-}
-
-#two {
-    transition: transform 0.2s ease-in-out;
-    margin: 3em;
-    margin-bottom: 3em;
-    width: 19vw;
-    height: 50vh;
-    background-color: white;
-    border-radius: 8px;
 }
 
 #footer{
@@ -290,6 +313,12 @@ li {
         flex-direction: column;
     }
 
+    #two {
+        margin: 3em;
+        width: 80%;
+        height: 37vh;
+    }
+
     #one {
         margin: 3em;
         width: 80%;
@@ -298,6 +327,12 @@ li {
 
     #resume{
         width: 50vw;
+        margin: 1em auto;
+        font-size: 13px;
+    }
+
+    #resume1{
+        width: 43vw;
         margin: 1em auto;
         font-size: 13px;
     }
@@ -311,12 +346,6 @@ li {
         width: 50vw;
         font-size: 16px;
         margin: 0.5em auto;
-    }
-
-    #two {
-        margin: 3em;
-        width: 80%;
-        height: 37vh;
     }
 
     .Xiaomi {

@@ -1,6 +1,7 @@
 // Seleccionamos el elemento div con id 'one'
 let div = document.getElementById("one");
 let div2 = document.getElementById("two");
+let div3 = document.getElementById("three");
 
 // Asignamos una función al evento mouseover
 div.onmouseover = function () {
@@ -22,4 +23,14 @@ div2.onmouseover = function () {
 div2.onmouseout = function () {
     // Restauramos el div a su tamaño original
     div2.style.transform = "scale(1)";
+};
+
+div3.onmouseover = function () {
+    // Escalamos el div al doble de su tamaño
+    div3.style.transform = "scale(1.1)";
+};
+
+div3.onmouseout = function () {
+    // Restauramos el div a su tamaño original
+    div3.style.transform = "scale(1)";
 };

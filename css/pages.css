@@ -112,11 +112,17 @@ a {
 #after-header {
     border-radius: 5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 0 auto;
     width: 80vw;
     height: 100%;
     background-color: rgb(230, 233, 235);
+}
+
+#example{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
 }
 
 #one {
@@ -155,6 +161,23 @@ a {
     height: 50vh;
     background-color: white;
     border-radius: 8px;
+}
+
+#three {
+    transition: transform 0.2s ease-in-out;
+    margin: 3em;
+    margin-bottom: 3em;
+    width: 19vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 8px;
+}
+
+#title-three {
+    width: 15vw;
+    font-size: 20px;
+    margin: 0.5em 0 0 3.5em;
+    height: 4vh;
 }
 
 #resume1{
