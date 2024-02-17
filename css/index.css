@@ -900,6 +900,7 @@ li {
         margin: 3em auto;
         font-size: 15px;
     }
+    
     #resume2{
         width: 13vw;
         margin: 3em auto;
@@ -940,6 +941,12 @@ li {
     }
     
     .copilot{
+        border-radius: 8px;
+        width: 19vw;
+        height: 28vh;
+    }
+
+    .Apple{
         border-radius: 8px;
         width: 19vw;
         height: 28vh;

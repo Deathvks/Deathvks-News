@@ -325,8 +325,20 @@ a {
         margin: 2em auto;
         font-size: 15px;
     }
+
+    #resume2{
+        width: 13vw;
+        margin: 3em auto;
+        font-size: 15px;
+    }
     
     .google {
+        border-radius: 8px;
+        width: 19vw;
+        height: 28vh;
+    }
+
+    .Apple{
         border-radius: 8px;
         width: 19vw;
         height: 28vh;
@@ -415,5 +427,15 @@ a {
         flex-direction: row;
         font-size: 20px;
         margin: 0 auto;
+    }
+
+    #four {
+        transition: transform 0.2s ease-in-out;
+        margin: 3em;
+        margin-bottom: 3em;
+        width: 19vw;
+        height: 59vh;
+        background-color: white;
+        border-radius: 8px;
     }
 }
