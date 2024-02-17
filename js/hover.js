@@ -2,6 +2,7 @@
 let div = document.getElementById("one");
 let div2 = document.getElementById("two");
 let div3 = document.getElementById("three");
+let div4 = document.getElementById("four");
 
 // Asignamos una función al evento mouseover
 div.onmouseover = function () {
@@ -33,4 +34,12 @@ div3.onmouseover = function () {
 div3.onmouseout = function () {
     // Restauramos el div a su tamaño original
     div3.style.transform = "scale(1)";
+};
+
+div4.onmouseover = function () {
+    div4.style.transform = "scale(1.1)";
+};
+
+div4.onmouseout = function () {
+    div4.style.transform = "scale(1)";
 };

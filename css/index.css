@@ -838,17 +838,7 @@ li {
         display: flex;
         flex-direction: row;
         margin: 0 auto;
-        width: 80vw;
-        height: 100%;
-        background-color: rgb(230, 233, 235);
-    }
-    
-    #after-header-notice{
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        width: 80vw;
+        max-width: 80vw;
         height: 100%;
         background-color: rgb(230, 233, 235);
     }
@@ -856,6 +846,7 @@ li {
     #example{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap; /* Añade esta línea */
         margin: 0 auto;
     }
     
@@ -887,6 +878,16 @@ li {
         background-color: white;
         border-radius: 8px;
     }
+
+    #four {
+        transition: transform 0.2s ease-in-out;
+        margin: 3em;
+        margin-bottom: 3em;
+        width: 19vw;
+        height: 59vh;
+        background-color: white;
+        border-radius: 8px;
+    }
     
     #resume{
         width: 15vw;
@@ -895,6 +896,11 @@ li {
     }
     
     #resume1{
+        width: 13vw;
+        margin: 3em auto;
+        font-size: 15px;
+    }
+    #resume2{
         width: 13vw;
         margin: 3em auto;
         font-size: 15px;
