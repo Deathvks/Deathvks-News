@@ -174,6 +174,16 @@ li {
         background-color: white;
         border-radius: 8px;
     }
+
+    #four {
+        transition: transform 0.2s ease-in-out;
+        margin: 3em;
+        margin-bottom: 3em;
+        width: 80%;
+        height: 47vh;
+        background-color: white;
+        border-radius: 8px;
+    }
     
     #resume{
         width: 50vw;
@@ -182,6 +192,12 @@ li {
     }
     
     #resume1{
+        width: 43vw;
+        margin: 3em auto;
+        font-size: 13px;
+    }
+
+    #resume2{
         width: 43vw;
         margin: 3em auto;
         font-size: 13px;
@@ -221,6 +237,12 @@ li {
     }
     
     .copilot{
+        border-radius: 8px;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .Apple{
         border-radius: 8px;
         width: 100%;
         height: 20vh;

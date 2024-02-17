@@ -319,6 +319,16 @@ a {
         background-color: white;
         border-radius: 8px;
     }
+
+    #four {
+        transition: transform 0.2s ease-in-out;
+        margin: 3em;
+        margin-bottom: 3em;
+        width: 19vw;
+        height: 59vh;
+        background-color: white;
+        border-radius: 8px;
+    }
     
     #resume{
         width: 15vw;
