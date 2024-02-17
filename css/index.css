@@ -150,7 +150,7 @@ li {
         transition: transform 0.2s ease-in-out;
         margin: 3em;
         width: 80%;
-        height: 38vh;
+        height: 37vh;
         background-color: white;
         border-radius: 8px;
     }
@@ -160,7 +160,7 @@ li {
         margin: 3em;
         margin-bottom: 3em;
         width: 80%;
-        height: 40vh;
+        height: 42vh;
         background-color: white;
         border-radius: 8px;
     }
@@ -170,7 +170,7 @@ li {
         margin: 3em;
         margin-bottom: 3em;
         width: 80%;
-        height: 40vh;
+        height: 45vh;
         background-color: white;
         border-radius: 8px;
     }
@@ -180,14 +180,14 @@ li {
         margin: 3em;
         margin-bottom: 3em;
         width: 80%;
-        height: 47vh;
+        height: 50vh;
         background-color: white;
         border-radius: 8px;
     }
     
     #resume{
         width: 50vw;
-        margin: 2em auto;
+        margin: 1em auto;
         font-size: 13px;
     }
     
@@ -200,6 +200,12 @@ li {
     #resume2{
         width: 43vw;
         margin: 3em auto;
+        font-size: 13px;
+    }
+
+    #resume3{
+        width: 50vw;
+        margin: 4em auto;
         font-size: 13px;
     }
     
@@ -925,7 +931,7 @@ li {
     
     #resume2{
         width: 13vw;
-        margin: 3em auto;
+        margin: 3.5em auto;
         font-size: 15px;
     }
     
