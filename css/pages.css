@@ -151,7 +151,7 @@ a {
         border-radius: 8px;
     }
 
-    #four {
+    #three {
         transition: transform 0.2s ease-in-out;
         margin: 3em auto;
         margin-bottom: 3em;
@@ -392,6 +392,16 @@ a {
         background-color: white;
         border-radius: 8px;
     }
+
+    #two {
+        transition: transform 0.2s ease-in-out;
+        margin: 3em;
+        margin-bottom: 3em;
+        width: 19vw;
+        height: 53vh;
+        background-color: white;
+        border-radius: 8px;
+    }
     
     #resume{
         width: 15vw;
@@ -408,6 +418,12 @@ a {
     #resume2{
         width: 13vw;
         margin: 3em auto;
+        font-size: 15px;
+    }
+
+    #resume3{
+        width: 13vw;
+        margin: 2em auto;
         font-size: 15px;
     }
     
@@ -428,16 +444,6 @@ a {
         font-size: 20px;
         margin: 0.5em auto;
         height: 4vh;
-    }
-    
-    #two {
-        transition: transform 0.2s ease-in-out;
-        margin: 3em;
-        margin-bottom: 3em;
-        width: 19vw;
-        height: 50vh;
-        background-color: white;
-        border-radius: 8px;
     }
     
     #title-three {
@@ -502,7 +508,7 @@ a {
         margin: 0 auto;
     }
 
-    #four {
+    #three {
         transition: transform 0.2s ease-in-out;
         margin: 3em;
         margin-bottom: 3em;
