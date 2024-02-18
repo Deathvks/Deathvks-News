@@ -44,13 +44,6 @@ a {
     background-color: rgb(45, 120, 190);
 }
 
-.seccion {
-    margin: 0 auto;
-    margin-top: 1em;
-    font-size: 16px;
-    color: white;
-}
-
 #dark-mode {
     display: flex;
     margin-top: 1em;
@@ -249,7 +242,14 @@ textarea {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .seccion {
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 16px;
+        color: white;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {}
@@ -258,4 +258,11 @@ textarea {
 @media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1200px) {
+    .seccion {
+        margin: 0 auto;
+        margin-top: 0.5em;
+        font-size: 25px;
+        color: white;
+    }
+}
