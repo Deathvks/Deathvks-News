@@ -239,10 +239,7 @@ textarea {
         font-size: 20px;
         margin: 0 6em auto -5em;
     }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
     .seccion {
         margin: 0 auto;
         margin-top: 1em;
@@ -251,8 +248,19 @@ textarea {
     }
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .seccion {
+        margin: 0 auto;
+        margin-top: 1em;
+        font-size: 16px;
+        color: white;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
@@ -260,9 +268,9 @@ textarea {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .seccion {
-        margin: 0 auto;
-        margin-top: 0.5em;
-        font-size: 25px;
-        color: white;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    font-size: 25px;
+    color: white;
     }
 }
